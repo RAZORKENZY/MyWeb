@@ -1,0 +1,171 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: url('view\ fop.jpg');
+    background-position: center;
+    background-size: cover;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(1, 1, 1, 0.7);
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo{
+    color: aliceblue;
+    font-weight: 700;
+    font-style: italic;
+}
+.navbar .navbar-nav a{
+    display: inline-block;
+    margin: 1rem;
+    font-size: medium;
+    position: sticky;
+    color: #fff;
+}
+.navbar a:hover{
+    color: grey;
+}
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    transform: scaleX(0);
+    transition: 0.2 linear;
+}
+.navbar .navbar-nav a:hover::after{
+    transform: scaleY(1);
+}
+.home,
+.view,
+.porto,
+.Kontak{
+    padding: 8rem 7% 1.4rem;
+}
+.home h2,
+.view h2,
+.porto h2,
+.Kontak h2{
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+.view .content p{
+    color: aliceblue;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.porto{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+    border-radius: 3rem;
+}
+.porto .row p{
+    color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+}
+.porto div img{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 60rem;
+    border-radius: 4rem;
+    border-bottom: none;
+}
+.Kontak .text-container p{
+    text-align: left;
+    color: aliceblue;
+    padding: 1rem;
+    font-size: medium;
+    margin: 0.5rem;
+}
+.Kontak .image-container img{
+    display: flex;
+    width: 25%;
+    height: 15%;
+    margin-bottom: 1rem;
+    justify-content: right;
+    text-align: right;
+    border-radius: 10%;
+    float: right;
+    top: 20%;
+    position: relative;
+}
+.Kontak .text-container a{
+    color: aqua;
+}
+.Kontak .text-container a:hover{
+    color: #fff;
+}
+footer{
+    background-color: rgba(1,   1,   1, 0.7);
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+}
+footer .social{
+    padding: 1rem 0;
+}
+footer .social a{
+    color: #fff;
+    margin: 1rem;
+}
+footer .social a:hover{
+    color: gray;
+}
+footer .link a:hover{
+    color: gray;
+}
+footer .link{
+    margin-bottom: 1.6rem;
+}
+footer .link a{
+    color: #fff;
+    padding: 0.7rem 1rem;
+}
+footer .credit{
+    font-size: 0.8rem;
+    color: #fff;
+}
+footer .credit a{
+    font-weight: 700;
+}
+
+/* Laptop */
+@media (max-width: 1366px){
+    html{
+        font-size: 75%;
+    }
+}
+
+/* Phone */
+@media(max-width: 450px){
+    html{
+        font-size: 55%;
+    }
+}
